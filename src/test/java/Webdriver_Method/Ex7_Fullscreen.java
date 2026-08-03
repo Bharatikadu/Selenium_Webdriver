@@ -1,0 +1,22 @@
+package Webdriver_Method;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Ex7_Fullscreen
+{
+    public static void main(String[]args) throws InterruptedException {
+        WebDriver driver = new ChromeDriver();
+        driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+
+        Thread.sleep(5000);
+
+        driver.manage().window().fullscreen();
+
+        driver.close();
+
+
+
+
+    }
+}
