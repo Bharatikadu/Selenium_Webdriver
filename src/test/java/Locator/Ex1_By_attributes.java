@@ -16,4 +16,6 @@ public class Ex1_By_attributes
          driver.findElement(By.xpath("//input[@id='name']")).sendKeys("Akshay");
 
      }
+
+
 }
