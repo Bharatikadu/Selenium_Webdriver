@@ -12,19 +12,17 @@ public class Ex1_By_text
         driver.get("https://testautomationpractice.blogspot.com/");
         driver.manage().window().maximize();
 
+        //start button
         driver.findElement(By.xpath("//button[text()='START']")).click();
-
+        //days
         driver.findElement(By.xpath("//label[text()='Days:']")).click();
-
+        //colour
         driver.findElement(By.xpath("//label[text()='Colors:']")).click();
 
         Thread.sleep(2000);
         //driver.close();
 
-        driver.switchTo().newWindow(WindowType.WINDOW);
-        driver.get("https://www.facebook.com/" );
-        driver.manage().window().maximize();
-        driver.close();
+
 
 
 
