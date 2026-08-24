@@ -1,4 +1,4 @@
-package s2_Lisrbox;
+package s2_Listbox;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
