@@ -1,8 +1,7 @@
-package Locator;
+package s1_Locator;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Ex1_By_text
