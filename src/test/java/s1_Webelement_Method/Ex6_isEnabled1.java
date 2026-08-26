@@ -1,4 +1,4 @@
-package Webelement_Method;
+package s1_Webelement_Method;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
