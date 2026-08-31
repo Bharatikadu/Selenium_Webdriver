@@ -1,8 +1,7 @@
-package Webelement_Method;
+package s1_Webelement_Method;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Ex3_Click

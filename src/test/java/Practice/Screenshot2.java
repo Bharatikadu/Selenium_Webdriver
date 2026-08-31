@@ -3,12 +3,13 @@ package Practice;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Ex2
+public class Screenshot2
 {
-    public static void main(String[] args)
+    public  static void main(String[] args)
     {
-        WebDriver driver = new ChromeDriver();
+        WebDriver driver=new ChromeDriver();
         driver.manage().window().maximize();
+        driver.get("https://www.facebook.com/");
 
     }
 }
