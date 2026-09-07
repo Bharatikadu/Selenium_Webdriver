@@ -1,0 +1,21 @@
+package s2_WebTable;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Ex3_GetSpecificData_FromTable
+{
+    public static void main(String[] args)
+    {
+        WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.get("https://testautomationpractice.blogspot.com/");
+
+        String text1 = driver.findElement(By.xpath("//table[@name='BookTable']//tr[5]/td[3]")).getText();
+        System.out.println(text1);
+
+        String text2 = driver.findElement(By.xpath("//table[@name='BookTable']//tr[2]/td[1]")).getText();
+        System.out.println(text2);
+    }
+}
