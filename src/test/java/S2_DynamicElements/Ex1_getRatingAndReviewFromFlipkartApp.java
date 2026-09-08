@@ -17,14 +17,20 @@ public class Ex1_getRatingAndReviewFromFlipkartApp
         Thread.sleep(2000);
 
         //search for mobile in search box
-        driver.findElement(By.xpath("(//input[@class='nw1UBF v1zwn26'])[1]")).sendKeys("Nothing 3a pro");
+        driver.findElement(By.xpath("(//input[@class='nw1UBF v1zwn26'])[1]")).sendKeys("Nothing 4a");
         Thread.sleep(2000);
 
         //click on search icon
         driver.findElement(By.xpath("(//button[@class='XFwMiH'])[1]")).click();
         Thread.sleep(2000);
 
+        //click on review
+        driver.findElement(By.xpath("(//div[@class='col col-7-12'])[1]//span[@class='PvbNMB']//span[4]")).click();
+        Thread.sleep(2000);
 
+        //click on rate
+        driver.findElement(By.xpath("((//div[@class='col col-7-12'])[1]//span[@class='PvbNMB']//span)[2]")).click();
+        Thread.sleep(2000);
 
 
     }
