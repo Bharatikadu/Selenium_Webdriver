@@ -13,10 +13,10 @@ public class Ex4_mouse_doubleClickAction
 	public static void main(String[] args) throws InterruptedException {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("https://demo.guru99.com/test/simple_context_menuhtml");
+        driver.get("https://demo.guru99.com/test/drag_drop.html");
         Thread.sleep(2000);
 
-        WebElement e = driver.findElement(By.xpath(""));
+        WebElement e = driver.findElement(By.xpath("//button[text()='Double-Click Me To See Alert']"));
         Actions act = new Actions(driver);
 
         /*approach1
@@ -26,7 +26,7 @@ public class Ex4_mouse_doubleClickAction
         //approach2
         act.moveToElement(e).doubleClick().perform();*/
 
-        //approach2
+        //approach3
         act.doubleClick(e).perform();
 
 

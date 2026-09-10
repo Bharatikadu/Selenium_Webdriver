@@ -15,8 +15,8 @@ public class Ex5_mouse_DragDrop
         driver.get("https://demo.guru99.com/test/drag_drop.html");
         Thread.sleep(2000);
 
-        WebElement src = driver.findElement(By.xpath(""));
-        WebElement dest = driver.findElement(By.xpath(""));
+        WebElement src = driver.findElement(By.xpath("(//a[@class='button button-orange'])[1]"));
+        WebElement dest = driver.findElement(By.xpath("(//div/h3[@class='ui-widget-header'])[1]"));
 
         Actions act = new Actions(driver);
         act.dragAndDrop(src,dest).perform();
