@@ -10,13 +10,13 @@ public class Ex1_switchToframe
     {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("https://testautomationpractice.blogspot.com/");
+        driver.get("https://www.w3schools.com/js/tryit.asp?filename=tryjs_myfirst");
 
 
         //switch to frame
         //driver.switchTo().frame("");
-        driver.switchTo().frame(driver.findElement(By.xpath("")));
+        driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@id='iframeResult']")));
 
-        driver.findElement(By.xpath("//button{text()=' Click me to display Date and Time']")).click();
+        driver.findElement(By.xpath("//button[contains(text(),' Date and Time.')]")).click();
     }
 }
