@@ -11,6 +11,7 @@ public class SwagLabLoginPage
        @FindBy(xpath = "//input[@id='user-name']")private  WebElement un;
        @FindBy(xpath = "//input[@id='password']")private  WebElement psw;
        @FindBy(xpath = "//input[@id='login-button']")private WebElement loginBtn;
+       @FindBy(xpath = "//h3[contains(text(),'Username and password')]") private  WebElement errorMsg;
 
 
        //2. initialize within a constructor with access level public using pagefactory class
@@ -33,6 +34,12 @@ public class SwagLabLoginPage
         public void clickLoginButton()
         {
             loginBtn.click();
+        }
+
+        public String getErrorMsg()
+        {
+            String actErrorMsg = errorMsg.getText();
+            return actErrorMsg;
         }
 
 
