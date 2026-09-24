@@ -19,7 +19,7 @@ public class Ex1_HiddenDivision
         //enter mob num
 
         driver.findElement(By.xpath("//input[@name='userId']")).sendKeys("2356891570");
-        driver.close();
+       driver.close();
 
 
     }
